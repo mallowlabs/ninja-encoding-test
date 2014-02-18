@@ -1,0 +1,17 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">    
+
+<h4>POST</h4>
+<form method="POST" action="${contextPath}/result">
+  <input type="text" name="value" value="✓">
+  <input type="submit">
+</form>
+
+<h4>GET</h4>
+<form method="GET" action="${contextPath}/result">
+  <input type="text" name="value" value="✓">
+  <input type="submit">
+</form>
+
+
+</@layout.myLayout>
